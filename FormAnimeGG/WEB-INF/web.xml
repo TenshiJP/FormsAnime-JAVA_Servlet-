@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!-- Copyright (c) 2002 by ObjectLearn. All Rights Reserved. -->
+<web-app>
+    <!-- Remove the comments below to define a servlet.          -->
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!--     <servlet>                                           -->
+    <!--       <servlet-name>MyServlet</servlet-name>            -->
+    <!--       <servlet-class>examples.MyServlet</servlet-class> -->
+    <!--       <init-param>                                      -->
+    <!--         <param-name>myparam</param-name>                -->
+    <!--         <param-value>12345</param-value>                -->
+    <!--       </init-param>                                     -->
+    <!--     </servlet>                                          -->
+    <!--                                                         -->
+    <!--                                                         -->
+    <!--     <servlet-mapping>                                   -->
+    <!--           <servlet-name>MyServlet</servlet-name>        -->
+    <!--           <url-pattern>/mine/*</url-pattern>            -->
+    <!--     </servlet-mapping>                                  -->
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <servlet>
+        <servlet-name>ModCuenta</servlet-name>
+        <display-name>ModCuenta</display-name>
+        <description>Servlet to update or delete data from db.</description>
+        <servlet-class>com.animegg.servlets.ModCuenta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ConsultaCuenta</servlet-name>
+        <display-name>ConsultaCuenta</display-name>
+        <description>Servlet to looking for an AnimeGG&apos;s acoount.</description>
+        <servlet-class>com.animegg.servlets.ConsultaCuenta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cuenta</servlet-name>
+        <display-name>Cuenta</display-name>
+        <description>Servlet to registrer a new account y DB and show in
+            log all account&apos;s.</description>
+        <servlet-class>com.animegg.servlets.Cuenta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ModCuenta</servlet-name>
+        <url-pattern>modCuenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultaCuenta</servlet-name>
+        <url-pattern>consultaCuenta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cuenta</servlet-name>
+        <url-pattern>registro</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+</web-app>

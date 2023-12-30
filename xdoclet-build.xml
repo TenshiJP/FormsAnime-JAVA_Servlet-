@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="_generation_" name="XDoclet Generator">
+<path id="xdoclet.classpath"><pathelement location="C:/java/j2sdk/lib/tools.jar"/>
+<pathelement location="C:/java/jboss-3.0.8/bin/run.jar"/>
+<pathelement location="C:/java/jboss-3.0.8/bin/shutdown.jar"/>
+<pathelement location="C:/java/jboss-3.0.8/client/jboss-j2ee.jar"/>
+<pathelement location="C:/java/jboss-3.0.8/server/default/lib/javax.servlet.jar"/>
+<pathelement location="C:/java/jboss-3.0.8/server/default/lib/classes12.zip"/>
+<pathelement location="C:/java/eclipse/workspace/FormAnimeGG/bin"/>
+
+<fileset dir="C:/java/eclipse/plugins/org.jboss.ide.eclipse.xdoclet.core_1.2.0/">
+<include name="*.jar"/>
+</fileset>
+</path>
+<target name="_generation_" depends=""/>
+</project>
